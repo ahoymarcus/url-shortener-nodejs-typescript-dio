@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import shortId from 'shortid';
 
 import { config } from '../config/Constants';
+import { URLModel } from '../database/model/URL';
+
 
 
 
@@ -14,18 +16,26 @@ export class URLController {
 		// 4. Retornar a URL que foi salva pela app
 		
 		// 1.
-		
-		// 2.
 		console.log(req.body);
 		const { originalURL } = req.body;
-		const hash = shortId.generate();
+		const url = await URLModel.findOne({ originURL });
 		
+		if (url) {
+			res.json(url);
+			return;
+		}
+		
+		// 2.
+		
+		const hash = shortId.generate();
 		const shortURL = `${config.API_URL}/${hash}`;
 		
 		// 3.
+		consst newURL = await URLModel.create({ hash, shortURL, originURL });
 		
 		// 4.
-		res.json({ originalURL, hash, shortURL });
+		//res.json({ originalURL, hash, shortURL });
+		res.json(newURL);
 	}
 	
 	

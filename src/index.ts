@@ -10,7 +10,6 @@ const api = express();
 
 api.use(express.json());
 
-
 const database = new MongoConnection();
 database.connect();
 
