@@ -18,7 +18,7 @@ export class URLController {
 		// 1.
 		console.log(req.body);
 		const { originalURL } = req.body;
-		const url = await URLModel.findOne({ originURL });
+		const url = await URLModel.findOne({ originalURL });
 		
 		if (url) {
 			res.json(url);
@@ -31,7 +31,7 @@ export class URLController {
 		const shortURL = `${config.API_URL}/${hash}`;
 		
 		// 3.
-		consst newURL = await URLModel.create({ hash, shortURL, originURL });
+		const newURL = await URLModel.create({ hash, shortURL, originalURL });
 		
 		// 4.
 		//res.json({ originalURL, hash, shortURL });

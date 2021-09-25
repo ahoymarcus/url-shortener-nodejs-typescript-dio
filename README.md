@@ -46,8 +46,8 @@ Dependências:
 
 <br />
 
-### Apresentando   
-![Resultado da chamada da 3ª rota em post users](/public/images/)
+### Fazendo a integração da aplicação com o banco de dados MongoDB:      
+![Fazendo a integração da aplicação com o banco de dados MongoDB](/public/images/fazendo-a-integração-da-aplicação-com-o-mongodb.png)
 
 
 

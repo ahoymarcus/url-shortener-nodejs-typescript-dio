@@ -1,5 +1,7 @@
 import mongoose from 'mongoose';
 
+import { config } from '../config/Constants';
+
 
 
 export class MongoConnection {
@@ -11,7 +13,7 @@ export class MongoConnection {
 			
 			console.log('Database connected');
 		} catch (error) {
-			console.error(err.message);
+			console.error(error.message);
 			
 			process.exit(1);
 		}
