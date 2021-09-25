@@ -4,10 +4,10 @@ import { prop, Typegoose } from '@hasezoey/typegoose';
 
 export class URL extends Typegoose {
 	@prop({ required: true })
-	hash: String
+	hash: string
 	
 	@prop({ required: true })
-	originalURL: String
+	originalURL: string
 	
 	@prop({ required: true })
 	shortURL: string

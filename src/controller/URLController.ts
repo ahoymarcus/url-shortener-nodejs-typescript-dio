@@ -49,16 +49,23 @@ export class URLController {
 		const { hash } = req.params;
 			
 		// 2.
-		
 		/*Criando um MOCK para TESTE*/
-		const url = {
+		const urlMock = {
 			"originalURL": "https://web.digitalinnovation.one/home",
 			"hash": "L1gKwOanR",
 			"shortURL": "http://localhost:5000/L1gKwOanR"
 		};
 		
+		const url = await URLModel.findOne({ hash });
+		
+		if (url) {
+			res.redirect(url.originalURL);
+			
+			return;
+		}
+		
 		// 3.
-		res.redirect(url.originalURL);
+		res.status(400).json({ error: 'URL not fount' });
 	}
 	
 }
