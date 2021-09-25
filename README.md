@@ -32,15 +32,15 @@ Dependências:
 
 <br />
 
-### Primeiro testa da aplicação Encurtadora de URL:      
+### Primeiro teste da aplicação Encurtadora de URL:      
 ![Primeiro testa da aplicação Encurtadora de URL](/public/images/teste-da-app-encurtadora-de-url.png)
 
 
 
 <br />
 
-### Apresentando   
-![Resultado da chamada da 2ª rota em get users-id](/public/images/)
+### Testando a função 'redirect' da API usando o código hash encurtado e visualizando a chamada de retorno com a URL original:      
+![Testando a função 'redirect' da API usando o código hash encurtado e visualizando a chamada de retorno com a URL original](/public/images/teste-da-função-de-redirecionamento-da-url-buscada.png)
 
 
 

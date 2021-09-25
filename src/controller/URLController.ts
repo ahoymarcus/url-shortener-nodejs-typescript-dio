@@ -27,6 +27,30 @@ export class URLController {
 		// 4.
 		res.json({ originalURL, hash, shortURL });
 	}
+	
+	
+	public async redirect(req: Request, res: Response): Promise<void> {
+		// 1. Pegar o hash da URL
+		// 2. Encontrar a URL original pelo hash
+		// 3. Redirecionar para a URL original a partir do que encontramos no DB
+		
+		
+		// 1.
+		const { hash } = req.params;
+			
+		// 2.
+		
+		/*Criando um MOCK para TESTE*/
+		const url = {
+			"originalURL": "https://web.digitalinnovation.one/home",
+			"hash": "L1gKwOanR",
+			"shortURL": "http://localhost:5000/L1gKwOanR"
+		};
+		
+		// 3.
+		res.redirect(url.originalURL);
+	}
+	
 }
 
 
