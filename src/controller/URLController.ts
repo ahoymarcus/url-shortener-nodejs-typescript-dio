@@ -22,6 +22,7 @@ export class URLController {
 		
 		if (url) {
 			res.json(url);
+			
 			return;
 		}
 		

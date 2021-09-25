@@ -54,29 +54,20 @@ Dependências:
 
 <br />
 
-### Apresentando   
-![Resultado da chamada da 4ª rota em put users-id](/public/images/)
+### Buscando no banco de dados com hash inválido:       
+![Buscando no banco de dados com hash inválido](/public/images/buscando-por-um-hash-inválido.png)
 
 
 
 <br />
 
-### Apresentando    
-![Resultado da chamada da 5ª rota em delete users-id](/public/images/)
+### Buscando no banco de dados com um hash válido e sendo redirecionado para o endereço da URL original:        
+![Buscando no banco de dados com um hash válido e sendo redirecionado para o endereço da URL original](/public/images/encontrando-um-hash-no-database-e-redirecionando-a-requisição-para-a-url-original.png)
 
 
 
 <br />
 
-### Testando   
-![Testando um tratamento de erro genérico](/public/images/)
-
-
-
-<br />
-
-### Testando   
-![Testando um tratamento de erro customizado](/public/images/)
 
 
 
@@ -84,8 +75,6 @@ Dependências:
 <br />
 
 [^1] Orientação da professora Alexia Pereira da Digital Innovation One.
-
-
 
 
 
